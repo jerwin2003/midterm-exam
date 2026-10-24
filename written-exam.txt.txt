@@ -1,0 +1,34 @@
+JERIN DERESMA BSIT-3B
+
+MIDTERM EXAM
+WRITTEN EXAM
+
+1. What is the operational difference between git fetch and git pull?
+ANS. git fetch downloads remote changes without modifying your current branch while git pull downloads and integrates those changes into your current branch.
+
+2. You have uncommitted changes in your working directory and need to temporarily switch to another branch. Which workflow prevents Git from blocking the checkout due to file overwrites?
+ANS. git stash followed by `git switch <branch-name>`.
+
+3. When executing a git merge --no-ff command, what specific behavior is enforced by Git?
+ANS. git merge --no-ff forces the creation of a merge commit even when a fast-forward merge is possible.
+
+4. What happens when you check out a specific commit hash directly (e.g., git checkout a1b2c3d) instead of a branch name?
+ANS. Detached HEAD state.
+
+5. You need to apply a specific bug-fix commit from a development branch history. Which command should you use?
+ANS. git cherry-pick <commit-hash>
+
+6. After performing a destructive git reset --hard operation, you realize your recent commits that were not on any branch. Which utility can retrieve these dangling commits?
+ANS. git reflog
+
+7. You want to remove untracked files and directories from your working tree, including ignored files listed in .gitignore. Which command flag combination achieves this?
+ANS. git clean -fdx
+
+8. You need to undo a public commit that has already been pushed to a shared remote repository without altering the existing commit history or disrupting collaborators. Which command is appropriate?
+ANS. git revert <commit-hash>
+
+9. You want to identify the specific commit that introduced a regression bug in a codebase with hundreds of historical commits. Which utility automates this binary search process?
+ANS. git bisect
+
+10. What is the function of the --amend flag when used with git commit?
+ANS. git commit --amend modifies the most recent commit by incorporating staged changes or updating the commit message.
