@@ -1,0 +1,52 @@
+
+
+<div class="login-page">
+  <div class="login-card">
+
+    <h2>USER LOGIN</h2>
+
+    <form (submit)="onLogin($event)">
+      <div class="input-box">
+        <span class="input-icon">👤</span>
+        <input
+          type="text"
+          name="username"
+          placeholder="Email ID"
+          aria-label="Email ID"
+          required
+        >
+      </div>
+
+      <div class="input-box">
+        <span class="input-icon">🔒</span>
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          aria-label="Password"
+          required
+        >
+      </div>
+
+      <div class="options">
+        <label>
+          <input type="checkbox" name="remember">
+          Remember me
+        </label>
+
+        <a href="#" (click)="$event.preventDefault()">
+          Forgot Password?
+        </a>
+      </div>
+
+      <button class="login-button" type="submit">
+        LOGIN
+      </button>
+    </form>
+
+    <button class="register-button" type="button">
+      REGISTER
+    </button>
+
+  </div>
+</div>
